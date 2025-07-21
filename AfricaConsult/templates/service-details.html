@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block title %}Our Services - Africa Donor Consult{% endblock %}
+
+
+
+{% block extra_css %}
+<link rel="stylesheet" href ="{% static 'css/bootstrap.min.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% extends 'base.html' %}
+{% block title %}{{ service.title }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-3" style="color: #006838;">{{ service.title }}</h2>
+    <p>{{ service.description }}</p>
+    <a href="{% url 'our_services' %}" class="btn btn-outline-dark mt-3">← Back to Services</a>
+  </div>
+</section>
+{% endblock %}
+
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+
+  
+
+  
+</main>
+{% endblock %}

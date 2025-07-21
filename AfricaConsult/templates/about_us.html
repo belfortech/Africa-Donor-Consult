@@ -1,0 +1,373 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block title %}Africa Donor Consult- About us{% endblock %}
+
+
+
+{% block extra_css %}
+<link rel="stylesheet" href ="{% static 'css/bootstrap.min.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<main class="main">
+
+
+  <!-- About Banner Section -->
+<section class="py-5 text-white" style="background-color: #006838; " data-aos="fade-up">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center" style="gap: 2rem;">
+  
+        <!-- Left: Heading -->
+        <div class="flex-shrink-0">
+          <h2 class="fw-bold mb-0 text-white">About ADC-PA</h2>
+        </div>
+  
+        <!-- Divider: -->
+        <div class="d-none d-md-block" style="width: 2px; height: 50px; background-color: #f4a100;"></div>
+  
+        <!-- Right: Paragraph -->
+        <div class="flex-grow-1">
+          <p class="mb-0">
+            At Africa Donor Consult & Procurement Auditors, we are more than auditors. We are advocates for transparency, efficiency, and impact in development.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Tab Navigation -->
+
+  <nav class="bg-warning text-center fw-semibold" style="background-color:  #F5B846;">
+    <div class="container">
+      <ul class="nav nav-tabs justify-content-center bg-warning py-2" id="aboutTabs" role="tablist">
+        
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active green-tab fw-semibold" id="mission-tab"
+                  data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab"
+                  aria-controls="mission" aria-selected="true">
+            Our Mission
+          </button>
+        </li>
+  
+        <li class="nav-item" role="presentation">
+          <button class="nav-link green-tab fw-semibold" id="vision-tab"
+                  data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab"
+                  aria-controls="vision" aria-selected="false">
+            Our Vision
+          </button>
+        </li>
+
+        
+        
+        <li class="nav-item" role="presentation">
+          <a href="#what-sets-us-apart" class="nav-link green-tab">What Sets Us Apart</a>
+        </li>
+        
+        <li class="nav-item" role="presentation">
+          <a href="#clients-partners" class="nav-link green-tab">Clients and Partners</a>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <a href="#expertise" class="nav-link green-tab">Our Expertise</a>
+        </li>
+  
+      
+    </div>
+  </nav>
+  
+  
+
+  <section class="py-5" style="background-color: #f7f7f7;" data-aos="fade-up">
+    <div class="container">
+  
+    
+      <!-- Tab Content -->
+      <div class="tab-content p-4 bg-white shadow-sm rounded" id="aboutTabsContent">
+  
+      
+
+<!-- Mission -->
+<div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+  <div class="border-start border-4 border-warning ps-3 mb-4">
+    <h5 class="fw-bold">Our Mission</h5>
+    <p class="mb-0">
+      To uphold the highest standards of integrity and accountability in donor-funded development through independent oversight, expert analysis, and local understanding.
+    </p>
+  </div>
+</div>
+
+<!-- Vision -->
+<div class="tab-pane fade show active" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+  <div class="border-start border-4 border-warning ps-3 mb-4 ms-md-5">
+    <h5 class="fw-bold mb-3">Our Vision</h5>
+    <p>
+      A continent where every donor investment transforms lives through responsible management,
+      ethical procurement, and measurable results.
+    </p>
+  </div>
+</div>
+
+  
+
+
+
+
+ 
+
+
+     <!-- Why Choose Us Section -->
+<section class="py-0" style="background-color: #fcefe6;" data-aos="fade-up" data-aos-delay="200">
+    <div class="container">
+    
+       
+<!-- Metrics Row -->
+<div class="row justify-content-center text-white text-center mx-0 mb-0 py-3" style="background-color: #006838;">
+  
+  <!-- Column 1 -->
+  <div class="col-md-3 mb-2 mb-md-0">
+    <img src="{% static 'assets/img/1.png' %}" style="width: 40px;" class="mb-2" alt="Image">
+    <h5 class="fw-bold text-white">50+</h5>
+    <p class="mb-0 small">Donor-funded projects audited</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="col-md-3 mb-2 mb-md-0">
+    <img src="{% static 'assets/img/africa.png' %}" style="width: 40px;" class="mb-2" alt="Image">
+    <h5 class="fw-bold text-white">15+</h5>
+    <p class="mb-0 small">African countries</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div class="col-md-3 mb-2 mb-md-0">
+    <img src="{% static 'assets/img/globe.png' %}" style="width: 40px;" class="mb-2" alt="Image">
+    <h5 class="fw-bold text-white">98%</h5>
+    <p class="mb-0 small">Client satisfaction <br>(international agencies)</p>
+  </div>
+
+  <!-- Column 4 -->
+  <div class="col-md-3">
+    <img src="{% static 'assets/img/staff.png' %}" style="width: 40px;" class="mb-2" alt="Image">
+    <h5 class="fw-bold text-white">+500</h5>
+    <p class="mb-0 small">Trained staff in procurement compliance</p>
+  </div>
+</div>
+
+<!-- Orange underline -->
+<div class="d-flex justify-content-center">
+  <div style="width: 750px; height: 15px; background-color: #f4a100; border-radius: 2px;"></div>
+</div>
+
+      
+
+  <!-- What Sets Us Apart -->
+  <section id="what-sets-us-apart" class="py-4 mt-4" style="background-color: #ffffff;" data-aos="fade-up">
+    
+    <div class="container">
+  
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <h3 class="fw-bold">What Sets Us Apart</h3>
+      </div>
+  
+      <!-- Two-Column Layout with Divider -->
+      <div class="row">
+       
+  
+        <!-- Left Column -->
+        <div class="col-lg-6 pe-lg-5">
+          <!-- Feature 1 -->
+          <div class="d-flex align-items-start mb-4">
+            <img src="{% static 'assets/img/global.png' %}" alt="Image" class="me-3" style="width: 24px; height: 24px;">
+            
+            <div>
+              <h6 class="fw-bold mb-1">Africa-Led. Globally Trusted.</h6>
+              <p class="small mb-0">We are an African firm rooted in local expertise, yet fully aligned with international donor standards.</p>
+            </div>
+          </div>
+  
+          <!-- Feature 2 -->
+          <div class="d-flex align-items-start">
+            <img src="{% static 'assets/img/result.png' %}" alt="Image" class="me-3" style="width: 24px; height: 24px;">
+            <div>
+              <h6 class="fw-bold mb-1">Independent & Impartial</h6>
+              <p class="small mb-0">We operate free from political or commercial influence—offering clean, evidence-driven insights.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Divider -->
+        <div class="d-none d-lg-block col-lg-1 px-0 text-center">
+          <div style="border-left: 3px solid #f4a100; height: 100%; margin: 0 auto;"></div>
+        </div>
+  
+        <!-- Right Column -->
+        <div class="col-lg-5 ps-lg-5 mt-4 mt-lg-0">
+          <!-- Feature 3 -->
+          <div class="d-flex align-items-start mb-4">
+            <img src="{% static 'assets/img/insights.png' %}" alt="Image" class="me-3" style="width: 24px; height: 24px;">
+            <div>
+              <h6 class="fw-bold mb-1">Results-Driven Partnerships</h6>
+              <p class="small mb-0">We collaborate with clients to foster change, build capacity, and strengthen performance from the inside out.</p>
+            </div>
+          </div>
+  
+          <!-- Feature 4 -->
+          <div class="d-flex align-items-start">
+            <img src="{% static 'assets/img/carbon.png' %}" alt="Image" class="me-3" style="width: 24px; height: 24px;">
+            <div>
+              <h6 class="fw-bold mb-1">Audit-Ready, Action-Oriented</h6>
+              <p class="small mb-0">Our audits reveal real solutions that strengthen systems and prevent future risks.</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+   
+<!-- Our Clients and Partners -->
+<section id="clients-partners"></section>
+<section class="py-5" style="background-color: #f7f7f7;" data-aos="fade-up">
+    <div class="container text-center">
+  
+     <!-- Our Clients & Partners Carousel -->
+<section class="py-5 "  data-aos="fade-up">
+    <div class="container text-center">
+
+        <!-- Section Heading -->
+      <h3 class="fw-bold mb-3">Our Clients and Partners</h3>
+      <div class="d-flex justify-content-center mb-5">
+        <div style="height: 3px; width: 60px; background-color: #f4a100; margin-right: 10px;"></div>
+        <div style="height: 3px; width: 60px; background-color: #f4a100;"></div>
+      </div>
+      
+  
+      <div class="swiper clientSwiper">
+        <div class="swiper-wrapper">
+  
+          <!-- Client 1 -->
+          <div class="swiper-slide">
+            <img src="{% static 'assets/img/image_28.png' %}" class="img-fluid mb-2" alt="UN Logo" style="height: 50px;">
+            <p class="small fw-semibold">United Nations agencies & Regional Bodies</p>
+          </div>
+  
+          <!-- Client 2 -->
+          <div class="swiper-slide">
+            <img src="{% static 'assets/img/image_29.png' %}" class="img-fluid mb-2" alt="Donor Logo" style="height: 50px;">
+            <p class="small fw-semibold">International & Bilateral donors</p>
+          </div>
+  
+          <!-- Client 3 -->
+          <div class="swiper-slide">
+            <img src="{% static 'assets/img/image_31.png' %}" class="img-fluid mb-2" alt="NGO Logo" style="height: 50px;">
+            <p class="small fw-semibold">NGOs & Civil Society Organizations</p>
+          </div>
+  
+          <!-- Client 4 -->
+          <div class="swiper-slide">
+            <img src="{% static 'assets/img/image_32.png' %}" class="img-fluid mb-2" alt="Gov Logo" style="height: 50px;">
+            <p class="small fw-semibold">National & Local Government Ministries</p>
+          </div>
+  
+          <!-- Client 5 -->
+          <div class="swiper-slide">
+            <img src="{% static 'assets/img/image_33.png' %}" class="img-fluid mb-2" alt="Oversight Logo" style="height: 50px;">
+            <p class="small fw-semibold">Procurement Boards & Oversight Authorities</p>
+          </div>
+  
+        </div>
+  
+        
+      </div>
+    </div>
+  </section>
+   
+  
+  
+
+  <!-- Our Expertise Section -->
+  <section id="expertise"></section>
+<section class="pt-5 mt-5" style="background-color: #006838" data-aos="fade-up">
+    <div class="container text-white text-center">
+  
+      <!-- Section Title -->
+      <h3 class="fw-bold mb-5 text-white">Our Expertise Includes</h3>
+  
+      <!-- Expertise Items -->
+      <div class="mx-auto" style="max-width: 700px;">
+  
+        <!-- Item 1 -->
+        <div class="pb-4 border-top border-warning pt-4 hover-bounce">
+          <i class="bi bi-clipboard-data text-warning fs-4 d-block mb-2"></i>
+          <span>Procurement & Financial Audits</span>
+        </div>
+  
+        <!-- Item 2 -->
+        <div class="pb-4 border-top border-warning pt-4 hover-bounce">
+          <i class="bi bi-shield-lock text-warning fs-4 d-block mb-2"></i>
+          <span>Fraud Risk Analysis & Investigations</span>
+        </div>
+  
+        <!-- Item 3 -->
+        <div class="pb-4 border-top border-warning pt-4 hover-bounce">
+          <i class="bi bi-bar-chart-line text-warning fs-4 d-block mb-2"></i>
+          <span>Monitoring, Evaluation & Learning (MEL)</span>
+        </div>
+  
+        <!-- Item 4 -->
+        <div class="pb-4 border-top border-warning pt-4 hover-bounce">
+          <i class="bi bi-person-video3 text-warning fs-4 d-block mb-2"></i>
+          <span>Capacity Building & Procurement Training</span>
+        </div>
+  
+        <!-- Item 5 -->
+        <div class="border-top border-warning pt-4 hover-bounce">
+          <i class="bi bi-journal-check text-warning fs-4 d-block mb-2"></i>
+          <span>Donor Compliance Advisory</span>
+        </div>
+
+         <!-- Item 5 -->
+         <div class="col-12 d-flex align-items-center border-top border-warning pt-3">
+           
+          </div>
+  
+      </div>
+    </div>
+  </section>
+
+  
+  
+     <!-- Get In Touch Section -->
+<section class="pt-5 mt-5" style="background-color: #006838" data-aos="fade-up">
+    <div class="container text-center text-white">
+      <h4 class="fw-bold mb-3 text-white">Get In Touch</h4>
+      <p class="mb-4">
+        We welcome partnerships and collaborations across Africa. Whether you're a donor, implementer, or institution, we're
+        ready to support you in achieving transparent, impactful development.
+      </p>
+  
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+          <div class="btn btn-dark rounded-pill px-4 py-2 custom-email-btn">
+
+          <i class="bi bi-envelope-fill me-2"></i> info@africadonorconsult.com
+        </div>
+        <div class="btn btn-dark rounded-pill px-4 py-2">
+          <i class="bi bi-telephone-fill me-2"></i> +256790390166 / +256705911350
+        </div>
+        <div class="btn btn-dark rounded-pill px-4 py-2">
+          <i class="bi bi-globe me-2"></i> 7J93+ GFV ,Buzinga Road,Kampala,Uganda
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  
+  </main>
+
+
+{% endblock %}

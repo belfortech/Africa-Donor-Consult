@@ -1,0 +1,128 @@
+{%load static%}
+
+<!-- Footer Section -->
+<footer class="bg-light py-5 border-top" style="border-color: #f4a100;">
+    <div class="container">
+      <div class="row">
+  
+        <!-- About -->
+        <div class="col-md-4 mb-4">
+          <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="{% static 'assets/img/consult_logo.png' %}" alt="Africa Donor Logo" style="max-height: 50px;" class="mb-3">
+          </a>
+          <h6 class ="fw-bold mb-3">About Us</h6>
+          <p class="text-dark small">
+            We are a trusted African firm specializing in procurement audits, donor compliance, and project evaluations.
+          </p>
+
+          <a href="{% url 'home' %}" class="text-dark me-3 small">Home</a>
+          <a href="{% url 'about_us' %}" class="text-dark me-3 small">About Us</a>
+          <a href="{% url 'our_services' %}" class="text-dark me-3 small">Services</a>
+          <a href="{% url 'blog'%}" class="text-dark me-3 small">Blog</a>
+          <a href="{% url 'contact_us' %}" class="text-dark small">Contact Us</a>
+        </div>
+        
+  
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-bold mb-3">Contact Us</h6>
+          <ul class="list-unstyled text-dark small">
+            <li class="mb-2"><i class="bi bi-envelope me-2 text-success"></i> info@africadonorconsult.com</li>
+            <li class="mb-2"><i class="bi bi-telephone me-2 text-success"></i> +256790390166 / +256705911350 </li>
+            <li class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-success"></i> 7J93+ GFV ,Buzinga Road,Kampala,Uganda</li>
+            <li><i class="bi bi-clock me-2 text-success"></i> Mon–Fri, 8:00 AM – 5:30 PM</li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter -->
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-bold mb-3">Subscribe to our newsletter</h6>
+          <form action="{% url 'newsletter' %}" method="POST" class="w-100">
+            {% csrf_token %}
+            <div class="input-group">
+              <input type="email" name="email" class="form-control" placeholder="Your email address..." required>
+              <button class="btn text-white fw-semibold" style="background-color: #f4a100; " type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+  
+      </div>
+  
+      <!-- Footer Nav + Social -->
+      
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-4 border-top">
+        
+        
+       
+
+    
+      <div class="d-flex justify-content-center align-items-center mt-3">
+        <a href="#" class="me-3"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="#" class="me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+      </div>
+    
+  
+    </div>
+  </footer>
+ 
+
+ 
+  
+
+  
+
+  <!-- Bottom Green Bar -->
+  <div style="height: 40px; background-color: #006838;"></div>
+  
+
+
+
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+ 
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+ <!-- Scripts -->
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+{% if messages %}
+  <div class="container mt-3">
+    {% for message in messages %}
+      <div class="alert alert-success">{{ message }}</div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+</html> 

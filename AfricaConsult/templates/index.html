@@ -1,0 +1,445 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block title %}Africa Donor Consult{% endblock %}
+
+
+
+{% block extra_css %}
+<link rel="stylesheet" href ="{% static 'assets/css/bootstrap.min.css' %}">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+
+  <main class="main">
+    
+ 
+
+<!-- Hero Section -->
+<section class="position-relative pt-0 mt-0">
+  <div class="container-fluid">
+    <!--div class="row align-items-center min-vh-65">-->
+      <div class="row align-items-center" style="min-height: 15vh; ">
+
+      <!-- Left: Text -->
+      <div class="col-md-6 bg-success text-white p-5 position-relative" >
+        <h1 class="fw-bold display-5">Ensuring Accountability.<br>Delivering Impact</h1>
+        <p class="mt-3">
+          We are Africa’s premier partner in donor fund assurance, procurement oversight, and compliance auditing—ensuring development aid delivers maximum impact with full transparency.
+        </p>
+        <div class="mt-4 d-flex gap-3">
+          <a href="#" class="btn text-white fw-semibold" style="background-color: #f4a100;">Learn more</a>
+          <a href="#" class="btn text-white fw-semibold" style="background-color: #f4a100;">Explore our services</a>
+        </div>
+      </div>
+
+      <!-- Right: Carousel -->
+      <div class="col-md-6 p-0">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'assets/img/image_27(1).png' %}" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'assets/img/image_27(1).png' %}" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'assets/img/image_27(1).png' %}" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+
+          <!-- Carousel Indicators -->
+          <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active me-2 rounded-circle border-0" style="width: 10px; height: 10px; background-color: #f4a100;"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="me-2 rounded-circle border-0" style="width: 10px; height: 10px; background-color: #f4a100;"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class="rounded-circle border-0" style="width: 10px; height: 10px; background-color: #f4a100;"></button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Patterned Bar -->
+  <!--div style="height: 50px; background-image: url('{% static "assets/img/footer_pattern.png" %}'); background-size: cover;"></div>-->
+</section>
+
+
+
+
+
+
+    <!-- Hero Section -->
+   
+    <section class="who-we-are-section py-5 pt-3" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <!-- Left Image with angled mask -->
+          <div class="col-md-6 position-relative">
+            <div class="masked-image-with-overlay">
+              <img src="{% static 'assets/img/who_we_are.png' %}" alt="Team" class="img-fluid">
+            </div>
+          </div>
+
+         
+          
+    
+          <!-- Right Content -->
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-3">Who we are</h2>
+            <p>
+              Africa Donor Consult & Procurement Auditors is a professional consulting firm
+              specializing in procurement audits, donor compliance, monitoring & evaluation, and
+              fraud risk assessment for donor-funded initiatives.
+            </p>
+            <p>
+              We work alongside international donors, NGOs, and governments to ensure every
+              dollar spent translates into tangible results on the ground. With a team of
+              multidisciplinary experts, we deliver high-quality, independent assessments that
+              promote efficiency, transparency, and sustainable development outcomes.
+            </p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+
+
+<!-- What We Do Section -->
+<section class="py-5" style="background-color: #f7f7f7";>
+  <div class="container">
+    <div class="text-start mb-5" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="fw-bold">What we do</h3>
+    </div>
+
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+
+      <!-- Service Card 1 -->
+      <div class="col-md-4" >
+        <div class="p-3 bg-white shadow-sm rounded h-100 d-flex align-items-start hover-pop">
+          <img src="{% static 'assets/img/monitoring.png' %}" alt="Monitoring" style="width: 60px; height: auto; margin-right: 1rem;">
+          <div>
+            <h6 class="fw-bold text-dark">Monitoring & Evaluation</h6>
+            <p class="mb-0 small">We track progress and assess impact to ensure donor projects deliver real change.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="col-md-4">
+        <div class="p-3 bg-white shadow-sm rounded h-100 d-flex align-items-start hover-pop">
+          <img src="{% static 'assets/img/carbon_review.png' %}" alt="Procurement" style="width: 60px; height: auto; margin-right: 1rem;">
+          <div>
+            <h6 class="fw-bold text-dark">Procurement Audit & Compliance Review</h6>
+            <p class="mb-0 small">We examine procurement processes to ensure fairness, transparency, and alignment with donor standards.</p>
+          </div>
+        </div>
+      </div>
+
+<!-- Service Card 3 -->
+<div class="col-md-4">
+  <div class="p-3 bg-white shadow-sm rounded h-100 d-flex align-items-start hover-pop">
+    <img src="{% static 'assets/img/audit.png' %}" alt="Project Audit" style="width: 60px; height: auto; margin-right: 1rem;">
+    <div>
+      <h6 class="fw-bold text-dark">Project Implementation Audit</h6>
+      <p class="mb-0 small">We assess real-time and post-implementation performance to measure effectiveness and recommend improvements.</p>
+    </div>
+  </div>
+</div>
+
+   
+
+
+
+<!-- Service Card 4 -->
+<div class="col-md-4">
+  <div class="p-3 bg-white shadow-sm rounded h-100 d-flex align-items-start hover-pop">
+    <img src="{% static 'assets/img/fraud.png' %}" alt="Fraud Risk Assessment" style="width: 60px; height: auto; margin-right: 1rem;">
+    <div>
+      <h6 class="fw-bold text-dark">Fraud Risk Assessment & Investigations</h6>
+      <p class="mb-0 small">We identify, assess, and mitigate fraud risks in complex, high-value projects.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Service Card 5 -->
+<div class="col-md-4">
+  <div class="p-3 bg-white shadow-sm rounded h-100 d-flex align-items-start hover-pop">
+    <img src="{% static 'assets/img/training.png' %}" alt="Procurement Training" style="width: 60px; height: auto; margin-right: 1rem;">
+    <div>
+      <h6 class="fw-bold text-dark">Procurement Training & Capacity Building</h6>
+      <p class="mb-0 small">We empower teams with the skills and knowledge to manage procurement in full compliance with global best practices.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Book a Consultation Button -->
+<div class="text-center mt-4">
+  <a href="{% url 'contact_us' %}" class="btn px-4 py-2 fw-semibold" style="background-color: #f4a100; color: #000;">
+    Book Consultation Today
+  </a>
+</div>
+
+
+<!-- Why Choose Us Section -->
+<section class="py-5" style="background-color: #ffffff;" data-aos="fade-up" data-aos-delay="200">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-4">
+      <h3 class="fw-bold">Why Choose Us?</h3>
+    </div>
+
+    <!-- Metrics Row -->
+    <div class="row justify-content-center text-white text-center mx-0 mb-4 py-3" style="background-color: #006838; border-bottom: 5px solid #f4a100;">
+      <div class="col-md-4 mb-2 mb-md-0">
+        <img src="{% static 'assets/img/1.png' %}" style="width: 40px;" class="mb-2" alt="Image">
+        <h5 class="fw-bold text-white">50+</h5>
+        <p class="mb-0 small">Donor-funded projects audited</p>
+      </div>
+
+      <div class="col-md-4 mb-2 mb-md-0">
+        <img src="{% static 'assets/img/africa.png' %}" style="width: 40px;" class="mb-2" alt="Image">
+        <h5 class="fw-bold text-white">15+</h5>
+        <p class="mb-0 small">African countries</p>
+      </div>
+
+      <div class="col-md-4">
+        <img src="{% static 'assets/img/globe.png' %}" style="width: 40px;" class="mb-2" alt="Image">
+        <h5 class="fw-bold text-white">98%</h5>
+        <p class="mb-0 small">Client satisfaction <br><span class="fst-italic">(international agencies)</span></p>
+      </div>
+    </div>
+
+    <!-- Reason Cards -->
+    <div class="row g-4">
+     
+
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="hover-pop position-relative bg-white shadow-sm p-3 rounded h-100 border-top" style="border-color: #f4a100;">
+      
+          <!-- Green Rectangle with Background Image -->
+          <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            background-color: #006838;
+            background-image: url('{% static 'assets/img/donor.png' %}');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-bottom-right-radius: 4px;">
+          </div>
+      
+          <h6 class="fw-bold mt-4">Donor-Focused</h6>
+          <p class="mb-0 small">We understand and align with international donor frameworks (USAID, UN, World Bank).</p>
+        </div>
+      </div>
+      
+
+
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="hover-pop position-relative  bg-white shadow-sm p-3 rounded h-100 border-top" style="border-color: #f4a100;">
+      
+          <!-- Green Rectangle with Background Image -->
+          <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            background-color: #006838;
+            background-image: url('{% static 'assets/img/data_driven.png' %}');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-bottom-right-radius: 4px;">
+          </div>
+      
+          <h6 class="fw-bold mt-4">Data-Driven</h6>
+          <p class="mb-0 small">Our reports are actionable, audit-ready, and designed for decision-making.</p>
+        </div>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class=" hover-pop position-relative bg-white shadow-sm p-3 rounded h-100 border-top" style="border-color: #f4a100;">
+      
+          <!-- Green Rectangle with Background Image -->
+          <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            background-color: #006838;
+            background-image: url('{% static 'assets/img/independent.png' %}');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-bottom-right-radius: 4px;">
+          </div>
+      
+          <h6 class="fw-bold mt-4">Independent & Objective</h6>
+          <p class="mb-0 small">We provide impartial assessments aligned with global audit standards.</p>
+        </div>
+      </div>
+      
+
+      <!-- Card 4 -->
+      <div class="col-md-3">
+        <div class=" hover-pop position-relative bg-white shadow-sm p-3 rounded h-100 border-top" style="border-color: #f4a100;">
+      
+          <!-- Green Rectangle with Background Image -->
+          <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            background-color: #006838;
+            background-image: url('{% static 'assets/img/streamline_global_learning.png' %}');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-bottom-right-radius: 4px;">
+          </div>
+      
+          <h6 class="fw-bold mt-4">Africa-Based, Globally Informed</h6>
+          <p class="mb-0 small">We understand and align with international donor frameworks (USAID, UN, World Bank).</p>
+        </div>
+      </div>
+    
+
+  </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+    
+  
+  
+
+     
+
+<!-- Outer Green Wrapper -->
+<section class="py-5" style="background-color: #006838;" data-aos="fade-up" data-aos-delay="200">
+  
+  <!-- Inner Background Image Layer with Overlay -->
+  <div class="position-relative text-white py-5"
+       style="background: url('{% static 'assets/img/testimonials.png' %}') no-repeat center center / cover;">
+
+    <!-- Overlay -->
+    <div style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 104, 56, 0.7); /* Semi-transparent green overlay */
+      z-index: 1;
+    "></div>
+
+    <!-- Content -->
+    <div class="container position-relative" style="z-index: 2;">
+      
+      <!-- Quote Icon -->
+      <div class="text-center mb-2">
+        <img src="{% static 'assets/img/Group_143.png' %}" alt="Quote Icon" width="50">
+      </div>
+
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <h3 class="text-white fw-bold position-relative d-inline-block pb-2"
+            style="border-bottom: 4px solid #f4a100;">
+          Testimonials
+        </h3>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="bg-white shadow-sm rounded p-4 position-relative">
+            <div class="d-flex align-items-center mb-3">
+              <div class="me-3">
+                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center"
+                     style="width: 40px; height: 40px;">
+                  <i class="bi bi-person-fill text-white fs-5"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-0 fw-bold">Program Manager</h6>
+                <small class="text-muted">NGO Partner, Uganda</small>
+              </div>
+            </div>
+            <p class="fst-italic small text-dark">
+              “Their audit helped us identify key inefficiencies and align better with donor expectations.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="bg-white shadow-sm rounded p-4 position-relative">
+            <div class="d-flex align-items-center mb-3">
+              <div class="me-3">
+                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center"
+                     style="width: 40px; height: 40px;">
+                  <i class="bi bi-person-fill text-white fs-5"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-0 fw-bold">M&E Officer</h6>
+                <small class="text-muted">International Agency</small>
+              </div>
+            </div>
+            <p class="fst-italic small text-dark">
+              “ADC-PA’s M&E report changed how we track impact across all our regional projects.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="bg-white shadow-sm rounded p-4 position-relative">
+            <div class="d-flex align-items-center mb-3">
+              <div class="me-3">
+                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center"
+                     style="width: 40px; height: 40px;">
+                  <i class="bi bi-person-fill text-white fs-5"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-0 fw-bold">Grace M.</h6>
+                <small class="text-muted">Grants Compliance Officer, Tanzania</small>
+              </div>
+            </div>
+            <p class="fst-italic small text-dark">
+              “Working with Africa Donor Consult & Procurement Auditors brought unmatched clarity to our procurement process...”
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

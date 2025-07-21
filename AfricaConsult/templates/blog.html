@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block title %}Africa Donor Consult- Blog {% endblock %}
+
+
+
+{% block extra_css %}
+<link rel="stylesheet" href ="{% static 'css/bootstrap.min.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<main class="main">
+
+ 
+
+    <section class="pt-0" style="background-color: #006838;">
+        <div class="container position-relative">
+      
+          <!-- Blog Header Card -->
+          <div class="bg-white px-4 py-3 position-relative" 
+               style="max-width: 800px; margin: -10px auto -40px auto; border-top: 8px solid #006838; border-left: 5px solid #006838; z-index: 2;">
+            <p class="text-success fw-bold mb-1" style="letter-spacing: 1px;">BLOG</p>
+            
+          <div style="margin-left: 30%;">
+            <h1>
+            <span style="color: #000000; font-weight:bold;">Trusted</span>
+            <span style="color: #f4a100; font-weight:bold;">Oversight.</span>
+          </div>
+        </h1>
+          <h1>
+          <span style="color: #000000; font-weight:bold;">Transparent</span>
+          <span style="color: #f4a100; font-weight:bold;">Impact.</span>
+        </h1>
+        </div>
+
+
+       
+
+
+      
+          <!-- Blog Hero Image -->
+          <div class="text-center position-relative" style="z-index: 1;">
+            <img src="{% static 'assets/img/blog_hero.png' %}" 
+                 alt="Blog Hero Image" 
+                 class="img-fluid shadow-sm rounded" 
+                 style="width: 100%; height: auto; margin-top:-10px;">
+          </div>
+      
+        </div>
+      </section>
+      
+
+
+              <section class="py-5 mt-3 bg-white">
+                <div class="container text-center">
+                    <!-- Title -->
+                  <h3 class="fw-bold mb-2">Blogs & Insights</h3>
+                  <div class="mx-auto mb-5" style="width: 60px; height: 3px; background-color: #f4a100;"></div>
+
+              
+                  <div class="row g-4 justify-content-center">
+                    <!-- Blog Card 1 -->
+                    <div class="col-md-4 position-relative hover-bounce">
+                      <!-- Decorative Line -->
+                      <div style="height: 50px; width: 3px; position: absolute; top: -60px; left: 50%; transform: translateX(-50%); z-index: 1;"></div>
+              
+                      <!-- Card -->
+                      <div class="border border-success position-relative p-3 text-center h-100" style="border-width: 2px;">
+                        <img src="{% static 'assets/img/image_37.png' %}" class="img-fluid mb-3" alt="Blog 1 Image">
+                        <p class="fw-bold small mb-2">5 Procurement Mistakes That Trigger Donor Audits</p>
+
+                        <a href="#" class="text-warning small text-decoration-none">Read More →</a>
+
+                      </div>
+                    </div>
+              
+                    <!-- Blog Card 2 -->
+                    <div class="col-md-4 position-relative hover-bounce">
+                      <div style="height: 50px; width: 3px; position: absolute; top: -60px; left: 50%; transform: translateX(-50%); z-index: 1;"></div>
+              
+                      <div class="border border-success position-relative p-3 text-center h-100" style="border-width: 2px;">
+                        <img src="{% static 'assets/img/fraud_reporting.png' %}" class="img-fluid mb-3" alt="Blog 2 Image">
+                        <p class="fw-bold small mb-2">5 How to Build an Effective Fraud Reporting Mechanism</p>
+
+                        <a href="#" class="text-warning small text-decoration-none">Read More →</a>
+
+                      </div>
+                    </div>
+              
+                    <!-- Blog Card 3 -->
+                    <div class="col-md-4 position-relative hover-bounce">
+                      <div style="height: 50px; width: 3px; position: absolute; top: -60px; left: 50%; transform: translateX(-50%); z-index: 1;"></div>
+              
+                      <div class="border border-success position-relative p-3 text-center h-100" style="border-width: 2px;">
+                        <img src="{% static 'assets/img/MEL.png' %}" class="img-fluid mb-3" alt="Blog 3 Image">
+                        <p class="fw-bold small mb-2">Designing MEL Plans for Impact-Driven Decision-Making</p>
+
+                        <a href="#" class="text-warning small text-decoration-none">Read More →</a>
+
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+              
+              
+              
+  
+    
+
+
+
+</main>
+{% endblock %}

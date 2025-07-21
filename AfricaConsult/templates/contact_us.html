@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block title %}Africa Donor Consult- Contact us {% endblock %}
+
+
+
+{% block extra_css %}
+<link rel="stylesheet" href ="{% static 'css/bootstrap.min.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<main class="main">
+
+    
+
+      <!-- Hero Section-->
+<section class="contact-hero text-white text-center d-flex align-items-center justify-content-center" 
+style="background-image: url('{% static 'assets/img/contact_us.png' %}'); background-size: cover; background-position: center; height: 300px;">
+<h1 class="fw-bold display-5 text-white">Contact Us</h1>
+</section>
+
+<!-- Main Contact Info-->
+<section class="contact-section text-white py-5" style="background-color: #006838">
+<div class="container">
+<div class="row">
+
+
+
+<!-- Left: Office Info -->
+<div class="col-md-6 mb-4">
+<h5 class="fw-bold mb-4 text-white">Main Office</h5>
+<p><i class="bi bi-clock text-warning me-2"></i>Office hours - Mon–Fri, 8:00 AM – 5:30 PM</p>
+<p><i class="bi bi-telephone-fill text-warning me-2"></i>+256790390166 / +256705911350</p>
+<p><i class="bi bi-envelope-fill text-warning me-2"></i>info@africadonorconsult.com</p>
+</div>
+
+
+
+<!-- Right: Contact Form -->
+<div class="col-md-6">
+<h5 class="fw-bold mb-4 text-white">Get In Touch</h5>
+
+{% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-success mt-3" role="alert">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+
+
+<form action="{% url 'contact_us' %}" method="POST" class="">
+    {% csrf_token %}
+ <div class="mb-3">
+   <input type="text" name="name" class="form-control" placeholder="Name*" required>
+ </div>
+ <div class="mb-3">
+   <input type="email" name="email" class="form-control" placeholder="Email Address*" required>
+ </div>
+ <div class="mb-3">
+   <input type="text" name="subject" class="form-control" placeholder="Subject*" required>
+ </div>
+ <div class="mb-3">
+   <textarea name="message" class="form-control" rows="4" placeholder="Message*" required></textarea>
+ </div>
+ <button type="submit" class="btn btn-warning px-4">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<section class="map-section">
+    <div class="container-fluid px-0">
+     
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d255344.12851444585!2d32.278520519284356!3d0.3303381509510021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s7J93%2BGFV%2C%20Buzinga%20Road%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2ske!4v1747721332649!5m2!1sen!2ske"
+          
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              
+          </iframe>
+      
+    </div>
+  </section>
+
+  
+  
+
+  
+
+<section
+  class="faq-section"
+  style="background-image: url('{% static "assets/img/contact_us.png" %}'); 
+         background-color: rgba(0, 39, 91, 0.8);
+         background-blend-mode: overlay;
+         background-size: cover;
+         background-position: center;
+         padding: 100px 0;">
+  <div class="container text-white text-center ">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="accordion accordion-flush" id="faqAccordion">
+  
+      <!-- FAQ 1 -->
+      <div class="accordion-item bg-transparent border-bottom">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Do you offer your services across all African countries?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-white-50">
+            Yes. We support clients across various African countries based on project needs.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item bg-transparent border-bottom">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            What types of organizations do you typically work with?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-white-50">
+            NGOs, international donors, government institutions, and private sector clients.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item bg-transparent border-bottom">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            Can I request a customized scope of work?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-white-50">
+            Absolutely. We tailor every engagement to meet your specific needs.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item bg-transparent border-bottom">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            How soon can you begin an assignment after contact?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-white-50">
+            Typically within 1–2 weeks after finalizing the engagement details.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item bg-transparent border-bottom">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            Do you offer short term training sessions for small teams?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-white-50">
+            Yes, we offer intensive short training tailored to smaller teams.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item bg-transparent border-bottom">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+            Is my information treated confidentially?
+          </button>
+        </h2>
+        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-white-50">
+            Absolutely. All inquiries and audit-related communications are handled with strict confidentiality in line with global standards and ethical guidelines.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+</main>
+{% endblock %}
