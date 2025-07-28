@@ -84,14 +84,14 @@ def contact_us(request):
                 subject=f"New Contact Message from {name}",
                 message=full_message,
                 from_email=email,  # who sent the email (user)
-                recipient_list=['charitymuthoka2019@gmail.com'],  # 🔥 your own email to receive the notification
+                recipient_list=['charitymuthoka2019@gmail.com'],  
                 fail_silently=False,
             )
 
 
         
         messages.success(request, "Thanks for contacting us! We will get back to you soon.")
-        return redirect('contact_us')  # redirect, not render
+        return redirect('contact_us')  
 
     return render(request, 'contact_us.html')
 
@@ -112,7 +112,7 @@ def newsletter(request):
 
 
         messages.success(request, "Thank you for subscribing!")
-        return redirect('contact_us')  # corrected here!
+        return redirect('contact_us') 
     return redirect('contact_us')
 
 
